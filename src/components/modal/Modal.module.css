@@ -1,6 +1,9 @@
 .modalContainer {
   /* Must be fixed. If we would take absolute, 
-  the modalContainer won't cover invisible parts which can only be accessed via scrolling.  */
+  the modalContainer won't cover invisible parts which can only be accessed via scrolling.  
+  Fixed means the div is fix. Even scrolling would change the position of this container.
+  As we set width and height to 100%, the fixed container is stretched over the whole view port.
+  */
   position: fixed;
   width: 100%;
   height: 100%;
