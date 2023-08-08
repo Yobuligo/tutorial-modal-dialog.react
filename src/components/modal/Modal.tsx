@@ -8,7 +8,10 @@ export const Modal: React.FC<IModalProps> = (props) => {
     <>
       {ReactDOM.createPortal(
         <div className={styles.modalContainer}>
-          <div className={styles.modalBackdrop}></div>
+          <div
+            className={styles.modalBackdrop}
+            onClick={() => console.log("Backdrop clicked")}
+          ></div>
           <Card className={styles.modalDialog}>{props.children}</Card>
         </div>,
         document.getElementById("modalContainer")!
