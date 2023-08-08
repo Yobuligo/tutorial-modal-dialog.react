@@ -1,5 +1,7 @@
 .modalContainer {
-  position: absolute;
+  /* Must be fixed. If we would take absolute, 
+  the modalContainer won't cover invisible parts which can only be accessed via scrolling.  */
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
