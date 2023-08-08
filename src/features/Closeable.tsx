@@ -4,7 +4,7 @@ export const Closeable: React.FC<ICloseable> = (props) => {
   return (
     <>
       <p>I am a component that can be closed</p>
-      <button>Close</button>
+      <button onClick={() => props.onClose()}>Close</button>
     </>
   );
 };
